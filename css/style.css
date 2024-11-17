@@ -1,6 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100vw; /* Pastikan elemen tidak melebihi lebar viewport */
+    overflow-x: hidden; /* Pastikan elemen tidak menyebabkan scroll horizontal */
+}
+
+body {
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+    overflow-y: scroll;  /* Memastikan scroll vertikal aktif di seluruh halaman */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .navbar-toggler {
@@ -40,7 +55,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .home::before {
@@ -68,6 +83,241 @@
     background-color: #FF9EAA;
 }
 
-.bride {
-    height: 100vh;
+.date {
+    background-color: #FF9EAA;
+}
+
+.gallery {
+    background-color: #FF9EAA;
+}
+
+.image-effect {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-effect:hover {
+    filter: grayscale(100%);
+    transform: scale(1.02);
+}
+
+.hr.scrolled {
+    color: black !important;
+}
+
+.image-effect-big {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-effect-big:hover {
+    filter: grayscale(100%);
+    transform: scale(1.02);
+}
+
+.nav-link.active {
+    background-color: #FF9AEE !important;
+    /* Warna latar belakang tetap */
+    color: white !important;
+    /* Warna teks tetap putih */
+    border-radius: 5px;
+    /* Opsional: membuat sudut sedikit melengkung */
+    padding: 5px 10px;
+    /* Opsional: memberi ruang tambahan */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Efek transisi */
+}
+
+.nav-link.scrolled:not(.active) {
+    color: black !important;
+    /* Warna teks hitam hanya jika tidak aktif */
+}
+
+
+footer li {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: #f6f6f6;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f6f6f6;
+}
+
+footer {
+    padding-bottom: 8rem;
+    background-color: #FF9EAA;
+}
+
+@keyframes navbarSlideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bawah {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+        -webkit-transform: translateY(200px);
+        -moz-transform: translateY(200px);
+        -ms-transform: translateY(200px);
+        -o-transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes kiri {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+        -webkit-transform: translateX(-200px);
+        -moz-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+        -o-transform: translateX(-200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
+
+@keyframes kanan {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+        -moz-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+        -o-transform: translateX(200px);
+}
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
+
+.bawah1 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+
+.bawah1.visible {
+    animation: bawah 1.5s ease forwards;
+    opacity: 1;
+    -webkit-animation: bawah 1.5s ease forwards;
+}
+
+.bawah2 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+
+.bawah2.visible {
+    animation: bawah 2s ease forwards;
+    opacity: 1;
+    -webkit-animation: bawah 2s ease forwards;
+}
+
+.bawah3 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+
+.bawah3.visible {
+    animation: bawah 2.5s ease forwards;
+    opacity: 1;
+    -webkit-animation: bawah 2.5s ease forwards;
+}
+
+.bawah4 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+
+.bawah4.visible {
+    animation: bawah 3s ease forwards;
+    opacity: 1;
+    -webkit-animation: bawah 3s ease forwards;
+}
+
+.kiri1 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+
+.kiri1.visible {
+    animation: kiri 1.5s ease forwards;
+    opacity: 1;
+    -webkit-animation: kiri 1.5s ease forwards;
+}
+
+.kanan1 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+
+.kanan1.visible {
+    animation: kanan 1.5s ease forwards;
+    opacity: 1;
+    -webkit-animation: kanan 1.5s ease forwards;
 }
