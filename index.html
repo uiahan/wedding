@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -12,52 +13,74 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-3">
         <div class="container-fluid">
-          <a class="navbar-brand text-white fw-semibold" href="#">Forever<span style="color: #FF9EAA;">Love</span></a>
+          <a class="navbar-brand text-white fw-semibold" href="#">Pure<span style="color: #FF9EAA;">Love</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <hr>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link active" aria-current="page" href="#">Ucapan Doa</a>
               </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
+
     <div class="home d-flex align-items-center">
         <div class="container">
             <div>
-                <h2 class="text-center text-white mb-4">The Wedding Of</h2>
-                <h1 class="text-center text-white" style="font-size: 3rem;">Faras & Irfan</h1>
+                <h2 class="text-center text-white mb-4" style="font-family: 'Merriweather', serif;">The Wedding Of</h2>
+                <h1 class="text-center text-white" style="font-size: 3rem; font-family: 'Dancing Script', cursive;">Faras & Irfan</h1>
                 <h5 class="text-center text-white">19 ⋅ 02 ⋅ 25</h5>
             </div>
             <div class="d-flex justify-content-center mt-3">
-                <a href="" class="btn px-4 rounded-5 text-white" style="background-color: #FF9EAA;">Buka Undangan</a>
+                <a href="" class="btn px-4 rounded-5 text-white fw-semibold fs-6" style="background-color: #FF9EAA;"><i class="fa-regular fa-envelope me-1"></i>Buka Undangan</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" style="font-family: 'Merriweather', serif; background-color: #f5f5f5;">
+        <div class="d-flex justify-content-end">
+            <img src="img/images__10_-removebg-preview.png" width="240" alt="">
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <img src="img/about-img.png" width="300" class="rounded-circle shadow" alt="">
+        </div>
+        <div class="container px-4 mt-5 pb-5">
+            <div class="card text-center px-4 py-5 border-0">
+                <h3 class="fw-bold">The Wedding Of</h3>
+                <p class="fw-bold" style="color: #FF9EAA;">Faras & Irfan</p>
+                <p style="color: #6c757d; font-size: 15px;">
+                    Ya Allah, dengan segala kesucian hati, kami bersujud memohon Ridho-Mu, untuk menuju Sunnah Rasul-Mu, membentuk keluarga yang sakinah, mawaddah, warohmah. Berikanlah kami kekuatan dan kesabaran dalam setiap ujian, serta jadikan rumah tangga kami penuh cinta, kebahagiaan, dan kedamaian. Semoga kami selalu saling menjaga, menghargai, dan mencintai, seperti yang Engkau ajarkan dalam Al-Qur'an dan Sunnah. Aamiin.</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="mt-2 mb-3"
+                          style="width: 60%; height: 2.3px; background-color: #FF9EAA;"></div>
+                      </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="surat">
+        <div class="container px-4 py-5">
+            <img src="img/images__8_-removebg-preview.png" width="240" alt="">
+            <div class="card px-4 border-0 shadow-sm py-5 text-center">
+                <h3 class="fw-bold">QS Ar-Rum</h3>
+                <p class="fw-bold" style="color: #FF9EAA;">Ayat 21</p>
+                <p style="color: #6c757d;">
+                    وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</p>
+                    <p style="color: #6c757d; font-size: 15px;">Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="mt-2 mb-3"
+                          style="width: 60%; height: 2.3px; background-color: #FF9EAA;"></div>
+                      </div>
             </div>
         </div>
     </div>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
