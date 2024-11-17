@@ -4,7 +4,8 @@
 }
 
 .navbar-toggler {
-    border: none; /* Menghilangkan border */
+    border: none;
+    /* Menghilangkan border */
 }
 
 .navbar-toggler-icon {
@@ -42,14 +43,13 @@
 h2, h5 {
     font-family: 'Playfair Display', serif;
 }
+
 h1 {
     font-family: 'Great Vibes', cursive;
 }
+
 .btn {
-    background-color: #FFCAD4;
-    box-shadow: 0 4px 6px rgba(255, 202, 212, 0.6); /* Shadow warna tema */
-}
-.btn:hover {
-    background-color: #FFC1CC; /* Warna sedikit lebih gelap untuk hover */
-    box-shadow: 0 6px 8px rgba(255, 202, 212, 0.8); /* Intensitas shadow lebih besar */
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(255,158,170,1);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(255,158,170,1);
+    box-shadow: 0px 0px 5px 3px rgba(255,158,170,1);
 }
